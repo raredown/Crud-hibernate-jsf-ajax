@@ -6,6 +6,9 @@
 package es.albarregas.modelo;
 
 import java.io.Serializable;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped;
+import javax.faces.bean.SessionScoped;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import static javax.persistence.GenerationType.IDENTITY;
@@ -16,6 +19,8 @@ import javax.persistence.Table;
  *
  * @author Daw2
  */
+@ManagedBean
+@RequestScoped
 @Entity
 @Table(name = "personas")
 public class Persona implements Serializable {
