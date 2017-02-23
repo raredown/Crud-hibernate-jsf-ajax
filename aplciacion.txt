@@ -1,0 +1,10 @@
+Vamos hacer un crud utilizando hibernate, jsf y ajax
+tabla clientes idcliente id
+añadir cliente
+nombre,apellidos,email
+actualizar eliminar cliente
+slecciona un cliente, idcliente,nombre,apellidos,email
+
+
+pojo cliente idcliente nombre apellidos email y un mensajes 
+cliente guardado sastifactoriamente
