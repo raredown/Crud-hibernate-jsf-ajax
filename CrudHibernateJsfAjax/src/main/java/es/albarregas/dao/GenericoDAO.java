@@ -75,7 +75,16 @@ public class GenericoDAO<T> implements IGenericoDAO<T> {
 
     @Override
     public void update(T objeto) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            try {
+            iniciaSesion();
+            sesion.saveOrUpdate(objeto);
+            sesion.flush();
+            
+        } catch (HibernateException he){
+            manejaExcepcion(he);
+        } finally {
+            cierraSesion();
+        }
     }
 
     @Override
